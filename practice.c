@@ -161,10 +161,53 @@
 // 5. Assignment 
 // 6. Ternary
 
+//2. Relational : 
+//   -> ==, >, >=, <=, !=
+//   -> output will be 1 or 0 as there is no true false in c
+
+//3. Logical :
+//   -> &&, ||, !
+//   -> To check one two conditions for their truthness
+//   -> && (Logical AND) : 
+//           If both are true, final output will be True
+//           If eany one of the n statements is false, it will be false
+//   -> || (Logical OR) :
+//           If any one of n statements is True, it will display 1 (True)
+//   -> !  (Logical NOT) :
+//           Converts true to false and vice versa
+
+//OPERATOR PRECEDENCE : 
+//                    1.           ! 
+//                    2.           *  /  %
+//                    3.           +  -
+//                    4.           <  <=  >=  >
+//                    5.           ==  !=
+//                    6.           &&
+//                    7.           ||
+//                    8.           =
+
+//4. Assignment Operators : 
+//   -> = 
+//   -> += increment in the LHS 
+//   -> -=
+//   -> *= 
+//   -> /=
+//   -> %=
+
+
+
+
+
+
+
+
+
+
+
 #include <stdio.h>
 int main(){
     int x, i;
-    printf("Enter a number : ");
+    printf("Random code so that the comments are visible");
 }
 
 
