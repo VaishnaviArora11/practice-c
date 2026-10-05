@@ -20,9 +20,75 @@
 //     printf("The Cube is : %d", cube);
 // }
 
+//PRINT AVERAGE OF 3 NUMS : 
+// int main(){
+//     int x, y, z;
+//     printf("Enter first number : ");
+//     scanf("%d", &x);
+//     printf("Enter second number : ");
+//     scanf("%d", &y);
+//     printf("Enter third number : ");
+//     scanf("%d", &z);
+//     float average = (x + y + z) / 3;
+//     printf("The average is : %f", average);
+// }
+
+//CHECK IF A GIVEN CHARACTER IS A DIGIT OR NOT : 
+//int main(){
+//     char ch;
+//     printf("Enter your character : ");
+//     scanf(" %c", &ch);
+//     printf("%d", ch >= '0' && ch <= '9');
+// }
+
+//PRINT SMALLEST NUMBER : 
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #include <stdio.h>
 int main(){
-    int x, i;
-    printf("Random code so that the comments are visible");
+    int x, y, z;
+    printf("Enter first number : ");
+    scanf("%d", &x);
+    printf("Enter second number : ");
+    scanf("%d", &y);
+    printf("Enter third number : ");
+    scanf("%d", &z);
+    int smallest;
+    if (x > y){
+        smallest = y;
+    } else{
+        smallest = x;
+    }
+    if (smallest > z){
+        smallest = z;
+    } else {
+        smallest = smallest;
+    }
+    printf("%d", smallest);
 }

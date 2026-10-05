@@ -26,9 +26,9 @@
 // we need to learn other languages for that
 
 //Data Types sizes : (in bytes)
-    // char or unsignedd char              1
+    // char or unsigned char              1
     // Unsigned char                       1
-    // int or signed int                    2
+    // int or signed int                   2
     // Unsigned int                        2
     // Short int or unsigned short int     2
     // signed short int                    2

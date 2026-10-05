@@ -63,14 +63,117 @@
 //     };
 // }
 
+//PRINT TRUE AND FALSE : Its sunday and its raining : 
+// int main(){
+//     int is_sunday = 1;
+//     int is_raining = 1;
+//     printf("%d", is_sunday && is_raining);
+// }
+
+//PRINT TRUE AND FALSE : Its monday or its raining : 
+// int main(){
+//     int is_monday = 1;
+//     int is_raining = 0;
+//     printf("%d", is_monday || is_raining);
+// }
+
+//PRINT TRUE AND FALSE : Check if its two digit or not :
+// int main(){
+//     int x;
+//     printf("Enter a number : ");
+//     scanf("%d", &x);
+//     printf("%d", 9 < x && x < 100);
+// }
+
+//CHECK WHETHER ADULT OR NOT :
+// int main(){
+//     int age;
+//     printf("Enter age : ");
+//     scanf("%d", &age);
+//     if(age < 18){
+//         printf("Youre a minor!");
+//     } else {
+//         printf("Youre an adult!");
+//     }
+// }
+
+//SWITCH-CASE : DAY OF THE WEEK : use numbers 
+// int main(){
+//     int day;
+//     printf("Enter day (1-7 only) : ");                // 1-monday 2-tuesday etc
+//     scanf("%d", &day);
+//     switch(day){
+//         case 1 : printf("Its Monday!");
+//                  break;
+//         case 2 : printf("Its Tuesday!");
+//                  break;
+//         case 3 : printf("Its Wednesday!");
+//                  break;
+//         case 4 : printf("Its Thursday!");
+//                  break;
+//         case 5 : printf("Its Friday!");
+//                  break;
+//         case 6 : printf("Its Saturday!");
+//                  break;
+//         case 7 : printf("Its Sunday!");
+//                  break;
+//         default : printf("Not a valid number oop");
+//     }
+// } 
+
+//SWITCH-CASE : DAY OF THE WEEK : use characters : 
+// int main(){
+//     char day;
+//     printf("Enter day : ");             //m-monday, t-tuesday, w, T, f, s, S
+//     scanf("%c", &day);
+//     switch(day){
+//         case 'm' : printf("Its Monday!");
+//                  break;
+//         case 't' : printf("Its Tuesday!");
+//                  break;
+//         case 'w' : printf("Its Wednesday!");
+//                  break;
+//         case 'T' : printf("Its Thursday!");
+//                  break;
+//         case 'f' : printf("Its Friday!");
+//                  break;
+//         case 's' : printf("Its Saturday!");
+//                  break;
+//         case 'S' : printf("Its Sunday!");
+//                  break;
+//         default : printf("Not a valid character oop");
+//     }
+// }
+
+//STUDENT PASS OR FAIL : use if-else
+// int main(){
+//     float marks;
+//     printf("Enter marks : ");
+//     scanf("%f", &marks);
+//     if (marks > 30 && marks <= 100){
+//         printf("PASS");
+//     } else if(marks > 100) {
+//         printf("INVALID");
+//     } else {
+//         printf("FAIL");
+//     };
+// }
+
+//STUDENT PASS OR FAIL : use ternary : 
+
+
+
+
 
 
 #include <stdio.h>
-int main(){
-    int x, i;
-    printf("Random code so that the comments are visible");
-}
 
+int main(){
+    float marks;
+    printf("Enter marks : ");
+    scanf("%f", &marks);
+    marks >= 30 ? printf("Pass") : printf("Fail");
+}
 
 
 
