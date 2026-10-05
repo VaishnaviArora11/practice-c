@@ -145,7 +145,7 @@
 //     }
 // }
 
-//STUDENT PASS OR FAIL : use if-else
+//STUDENT PASS OR FAIL : use if-else : 30 <= fail , 30 > pass
 // int main(){
 //     float marks;
 //     printf("Enter marks : ");
@@ -159,7 +159,34 @@
 //     };
 // }
 
-//STUDENT PASS OR FAIL : use ternary : 
+//STUDENT PASS OR FAIL : use ternary : 30 <= fail , 30 > pass
+// int main(){
+//     float marks;
+//     printf("Enter marks : ");
+//     scanf("%f", &marks);
+//     marks >= 30 ? printf("Pass") : printf("Fail");
+// }
+
+//STUDENT GRADING SYSTEM : (marks < 30 C) , (30 <= marks < 70  B) , (70 <= marks < 90 A)  , (90 <= marks < 100 A+) :
+// int main(){
+//     float marks;
+//     printf("Enter marks : ");
+//     scanf("%f", &marks);
+//     if(marks < 30){
+//         printf("C");
+//     } else if (30 <= marks && marks < 70) {
+//         printf("B");
+//     } else if(70 <= marks && marks < 90){
+//         printf("A");
+//     } else if (90 <= marks && marks < 100){
+//         printf("A+");
+//     } else {
+//         printf("Not a valid number");
+//     }
+// }
+
+//CHECK UPPERCASE : 
+// 
 
 
 
@@ -169,10 +196,14 @@
 #include <stdio.h>
 
 int main(){
-    float marks;
-    printf("Enter marks : ");
-    scanf("%f", &marks);
-    marks >= 30 ? printf("Pass") : printf("Fail");
+    char ch;
+    printf("Enter a character : ");
+    scanf(" %c", &ch);
+    if(65 >= ch && ch <= 90){
+        printf("Uppercase");
+    } else {
+        printf("Not uppercase");
+    }
 }
 
 

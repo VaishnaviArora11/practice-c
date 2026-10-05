@@ -42,27 +42,41 @@
 // }
 
 //PRINT SMALLEST NUMBER : 
-//
+// int main(){
+//     int x, y, z;
+//     printf("Enter first number : ");
+//     scanf("%d", &x);
+//     printf("Enter second number : ");
+//     scanf("%d", &y);
+//     printf("Enter third number : ");
+//     scanf("%d", &z);
+//     int smallest;
+//     if (x > y){
+//         smallest = y;
+//     } else{
+//         smallest = x;
+//     }
+//     if (smallest > z){
+//         smallest = z;
+//     } else {
+//         smallest = smallest;
+//     }
+//     printf("%d", smallest);
+// }
 
+//FIND ARMSTRONG OF A 3 DIGIT NUM : 
+// int main(){
+//     int num, a, b, c;
+//     printf("Enter a 3 digit number : ");
+//     scanf("%d", &num);
+//     a = num / 100;
+//     b = (num / 10) % 10;
+//     c = num % 10;
+//     int armstrong = (a * a * a) + (b * b * b) + (c * c * c);
+//     printf("%d", armstrong);
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//CHECK IF NUMBER IS NATURAL NUMBER :
 
 
 
@@ -71,24 +85,31 @@
 
 
 #include <stdio.h>
+
 int main(){
-    int x, y, z;
-    printf("Enter first number : ");
-    scanf("%d", &x);
-    printf("Enter second number : ");
-    scanf("%d", &y);
-    printf("Enter third number : ");
-    scanf("%d", &z);
-    int smallest;
-    if (x > y){
-        smallest = y;
-    } else{
-        smallest = x;
-    }
-    if (smallest > z){
-        smallest = z;
+    int a;
+    printf("Enter a number : ");
+    scanf("%d", &a);
+    if(a >= 1){
+        printf("Its a natural number");
     } else {
-        smallest = smallest;
-    }
-    printf("%d", smallest);
+        printf("Not a natural number");
+    };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

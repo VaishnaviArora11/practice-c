@@ -170,7 +170,7 @@
 //   -> To check one two conditions for their truthness
 //   -> && (Logical AND) : 
 //           If both are true, final output will be True
-//           If eany one of the n statements is false, it will be false
+//           If eany one of the n statements is false, output will be false
 //   -> || (Logical OR) :
 //           If any one of n statements is True, it will display 1 (True)
 //   -> !  (Logical NOT) :
@@ -193,6 +193,36 @@
 //   -> *= 
 //   -> /=
 //   -> %=
+
+
+//CONDITIONAL STATEMENTS :
+// two types :
+//   -> if-else-else if
+//   -> switch
+
+// SWITCH : 
+// switch(number/character){
+// case c1 : work;
+//      break;
+// case c2 : work;
+//      break;
+// default : work;
+// }
+// Properties :
+//   -> no order of cases 
+//   -> nested switches are allowed
+
+//CONDITIONAL OPERATORS : Ternary : 
+// condition ? work if true : work if false;
+// to write lesser lines of code 
+// we use if it has a single line of work
+
+//LOOPS :
+
+
+
+
+
 
 
 
