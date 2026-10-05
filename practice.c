@@ -218,6 +218,29 @@
 // we use if it has a single line of work
 
 //LOOPS :
+// 3 types of loops :
+//   -> for
+//   -> while
+//   -> do while
+// loop counter/iterator can be float and characters also
+
+
+//INCREMENT OPERATORS : 
+// i++ is for use, then increase (pre-increment)
+// ++i is for increase, then use (post-increment)
+
+//DECREMENT OPEARTORS :
+// i-- is for use, then increase (pre-decrement)
+// --i is for increase, then use (post-decrement)
+
+//DO WHILE :
+// executes at least once unlike the other two loops
+// do{
+//    work;
+// } while(condition);
+
+// you can use multiple iterations in one for loop
+// 
 
 
 
@@ -226,18 +249,19 @@
 
 
 
-
-
-
-
-
+// int x, i;
+    // printf("Random code so that the comments are visible");
 
 
 
 #include <stdio.h>
 int main(){
-    int x, i;
-    printf("Random code so that the comments are visible");
+    int x = 3, sum = 0;
+    for(int i = 1, j = x; i <= x && j >= 0; i++, j--){
+        sum += i;
+        printf("%d\n", j);
+    }
+    printf("%d", sum);
 }
 
 

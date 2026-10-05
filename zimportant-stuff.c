@@ -46,5 +46,5 @@
 #include <stdio.h>
 int main(){
     int x, i;
-    printf("Random code so that the comments are visible.");
+    printf("Random code so that the comments are visible...");
 }

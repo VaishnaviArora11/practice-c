@@ -77,9 +77,46 @@
 // }
 
 //CHECK IF NUMBER IS NATURAL NUMBER :
+// int main(){
+//     int a;
+//     printf("Enter a number : ");
+//     scanf("%d", &a);
+//     if(a >= 1){
+//         printf("Its a natural number");
+//     } else {
+//         printf("Not a natural number");
+//     };
+// }
 
+//SQUARE PATTERN :
+// int main(){
+//     int n;
+//     printf("Enter a number : ");
+//     scanf("%d", &n);
+//     for (int i = 1; i <= n; i++){   
+//         for(int j = 1; j <= n; j++){
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+// }
 
-
+//PRIME OR NOT :
+// int main(){
+//     int n, prime = 1;
+//     printf("Enter a number : ");
+//     scanf("%d", &n);
+//     for (int i = 2; i < n; i++){   
+//         if (n % i == 0){
+//             prime = 0;
+//         }
+//     }
+//     if(prime == 1){
+//         printf("Prime number!");
+//     } else {
+//         printf("Not Prime");
+//     }
+// }
 
 
 

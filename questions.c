@@ -186,9 +186,149 @@
 // }
 
 //CHECK UPPERCASE : 
-// 
+// int main(){
+//     char ch;
+//     printf("Enter a character : ");
+//     scanf(" %c", &ch);
+//     if(65 >= ch && ch <= 90){
+//         printf("Uppercase");
+//     } else {
+//         printf("Not uppercase");
+//     }
+// }
 
+//PRINT 1 TO 100 USING FOR LOOP :
+// int main(){
+//     for(int i = 1; i <= 100; i++){
+//         printf("%d\n", i);
+//     }
+// }
 
+//PRINT 100 TO 0 USING FOR LOOP :
+// int main(){
+//     for(int i = 100; i >= 0; i--){
+//         printf("%d\n", i);
+//     }
+// }
+
+//PRINT 0 TO N (USER INPUT) :
+// int main(){
+//     int n;
+//     printf("Enter a number :");
+//     scanf("%d", &n);
+//     for(int i = 0; i <= n; i++){
+//         printf("%d\n", i);
+//     }
+// }
+
+//PRINT THE TABLE OF n INPUT :
+// int main(){
+//     int n;
+//     printf("Enter a number :");
+//     scanf("%d", &n);
+//     for(int i = 1; i <= 10; i++){
+//         printf("%d\n", n * i);
+//     }
+// }
+
+//KEEP TAKING INPUT NUMS UNTIL ODD NUM :
+// int main(){
+//     int n;
+//     printf("Enter a number :");
+//     scanf("%d", &n);
+//     for(int i = 1; i <= 100; i++){
+//         printf("Enter a number :");
+//         scanf("%d", &n);
+//         if (n % 2 == 1){
+//             break;
+//         } 
+//     }
+//     printf("ODD");
+// }
+
+//KEEP TAKING INPUT NUMS UNTIL MULTIPLE OF 7 :
+//method 1 :
+// int main(){
+//     int n;
+//     printf("Enter a number :");
+//     scanf("%d", &n);
+//     for(int i = 1; i <= 100; i++){
+//         printf("Enter a number :");
+//         scanf("%d", &n);
+//         if (n % 7 == 0){
+//             break;
+//         } 
+//     }
+//     printf("Thank you!");
+// }
+//method 2 :
+// int main(){
+//     int n;
+//     printf("Enter a number :");
+//     scanf("%d", &n);
+//     do{
+//         printf("Enter a number :");
+//         scanf("%d", &n);
+//         if (n % 7 == 0){
+//             break;
+//         }
+//     } while(1);
+//     printf("Thank you!");
+// }
+
+//PRINT 1 TO 10 EXCEPT 6 :
+// int main(){
+//     int n = 10;
+//     for (int i = 1; i <= n; i++){
+//         if (i == 6){
+//             continue;
+//         }
+//         printf("%d\n", i);
+//     }
+// }
+
+//ALL ODD NUMBERS FROM 5 TO 50 : 
+// int main(){
+//     for (int i = 5; i <= 50; i++){
+//         if (i % 2 == 1){
+//             printf("%d\n", i);
+//         } 
+//     }
+// }
+
+//FACTORIAL OF NUMBER N : 
+// int main(){
+//     int n;
+//     printf("Enter a number : ");
+//     scanf("%d", &n);
+//     int factorial = 1;
+//     for (int i = n; i >= 1; i--){
+//         factorial = factorial * i;
+//     }
+//     printf("%d", factorial);
+// }
+
+//SUM OF ALL NUMS 5-50 : 
+// int main(){
+//     int sum = 0;
+//     for (int i = 5; i <= 50; i++){
+//         sum += i;
+//     }
+//     printf("%d", sum);
+// }
+
+//SQUARE PATTERN :
+// int main(){
+//     int n;
+//     printf("Enter a number : ");
+//     scanf("%d", &n);
+//     for (int i = 1; i <= n; i++){   
+//         for(int j = 1; j <= n; j++){
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+// }
 
 
 
@@ -196,13 +336,18 @@
 #include <stdio.h>
 
 int main(){
-    char ch;
-    printf("Enter a character : ");
-    scanf(" %c", &ch);
-    if(65 >= ch && ch <= 90){
-        printf("Uppercase");
+    int n, prime = 1;
+    printf("Enter a number : ");
+    scanf("%d", &n);
+    for (int i = 2; i < n; i++){   
+        if (n % i == 0){
+            prime = 0;
+        }
+    }
+    if(prime == 1){
+        printf("Prime number!");
     } else {
-        printf("Not uppercase");
+        printf("Not Prime");
     }
 }
 
