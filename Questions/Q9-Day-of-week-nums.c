@@ -1,4 +1,4 @@
-//                                                 Question 8 : Day of the Week Using Numbers 
+//                                                 Question 9 : Day of the Week Using Numbers 
 
 // Take a user input in integer format, and print whether the inputted number is which day of the week
 // Use Switch-case
@@ -8,24 +8,24 @@
 #include <stdio.h>
 
 int main(){
-    char day;
-    printf("Enter day : ");             //m-monday, t-tuesday, w, T, f, s, S
-    scanf("%c", &day);
+    int day;
+    printf("Enter day (1-7 only) : ");                // 1-monday 2-tuesday etc
+    scanf("%d", &day);
     switch(day){
-        case 'm' : printf("Its Monday!");
+        case 1 : printf("Its Monday!");
                  break;
-        case 't' : printf("Its Tuesday!");
+        case 2 : printf("Its Tuesday!");
                  break;
-        case 'w' : printf("Its Wednesday!");
+        case 3 : printf("Its Wednesday!");
                  break;
-        case 'T' : printf("Its Thursday!");
+        case 4 : printf("Its Thursday!");
                  break;
-        case 'f' : printf("Its Friday!");
+        case 5 : printf("Its Friday!");
                  break;
-        case 's' : printf("Its Saturday!");
+        case 6 : printf("Its Saturday!");
                  break;
-        case 'S' : printf("Its Sunday!");
+        case 7 : printf("Its Sunday!");
                  break;
-        default : printf("Not a valid character oop");
+        default : printf("Not a valid number oop");
     }
-}
+} 
