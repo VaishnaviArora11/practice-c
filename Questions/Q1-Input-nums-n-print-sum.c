@@ -1,6 +1,6 @@
 //                                         Question 1 : Input Nums and Print Sum 
 
-// Take uer input and print their sums 
+// Take user input and print their sums 
 
 int main(){
     int a, b;
