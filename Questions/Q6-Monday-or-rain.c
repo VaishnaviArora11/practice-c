@@ -1,6 +1,6 @@
 //                                                 Question 5 : Monday or Its Raining
 
-// Print true or false if its mondayday OR its raining
+// Print true or false if its monday OR its raining
 
 
 
