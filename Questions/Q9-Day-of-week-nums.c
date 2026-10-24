@@ -8,24 +8,24 @@
 #include <stdio.h>
 
 int main(){
-    int day;
-    printf("Enter day (1-7 only) : ");                // 1-monday 2-tuesday etc
-    scanf("%d", &day);
+    char day;
+    printf("Enter day : ");             //m-monday, t-tuesday, w, T, f, s, S
+    scanf("%c", &day);
     switch(day){
-        case 1 : printf("Its Monday!");
+        case 'm' : printf("Its Monday!");
                  break;
-        case 2 : printf("Its Tuesday!");
+        case 't' : printf("Its Tuesday!");
                  break;
-        case 3 : printf("Its Wednesday!");
+        case 'w' : printf("Its Wednesday!");
                  break;
-        case 4 : printf("Its Thursday!");
+        case 'T' : printf("Its Thursday!");
                  break;
-        case 5 : printf("Its Friday!");
+        case 'f' : printf("Its Friday!");
                  break;
-        case 6 : printf("Its Saturday!");
+        case 's' : printf("Its Saturday!");
                  break;
-        case 7 : printf("Its Sunday!");
+        case 'S' : printf("Its Sunday!");
                  break;
-        default : printf("Not a valid number oop");
+        default : printf("Not a valid character oop");
     }
-} 
+}
