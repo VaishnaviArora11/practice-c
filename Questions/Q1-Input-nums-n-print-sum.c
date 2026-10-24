@@ -2,6 +2,8 @@
 
 // Take user input and print their sums 
 
+#include <stdio.h>
+
 int main(){
     int a, b;
     printf("Enter first digit : ");
