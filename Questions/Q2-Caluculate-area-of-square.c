@@ -12,3 +12,5 @@ int main(){
     printf("%d", area_ofsquare);
     return 0; 
 }
+
+// Value can be float value as well, so code the same for float
