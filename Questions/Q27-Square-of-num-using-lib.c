@@ -1,4 +1,4 @@
-//                                                                   Question 27 : Square Of Num using Library functions
+//                                                  Question 27 : Square Of Num using Library functions
 
 // Use Library functions to calculae the square of a number 
 // The number should be input 
