@@ -1,22 +1,21 @@
-//                                                  Question 32 : Celsius to Farenheit
+//                                                  Question 33 : Marks Percentage
 
-// WAF to Convert Celsius to Farenheit 
-// Take user input n degree celsius
-// Farenheit = (Celsius * 9/5) + 32
+// WAF to calculate Percentage of a students marks 
+// Take user input for science, maths and sanskrit marks
 // Print result upto two decimal places
 
 
 
 #include <stdio.h>
 
-float celsiusToFarenheit(int n);
+float percentageMarks(int sc, int ma, int san);
 
 int main(){
-    int n;
-    scanf("%d", &n);
-    printf("%.2f", celsiusToFarenheit(n));
+    int sc, ma, san;
+    scanf("%d %d %d", &sc, &ma, &san);
+    printf("%.2f", percentageMarks(sc, ma, san));
 }
 
-float celsiusToFarenheit(int n){
-    return (n * 9/5.0) + 32;
+float percentageMarks(int sc, int ma, int san){
+    return (sc + ma + san) * 100 / 300;
 }
