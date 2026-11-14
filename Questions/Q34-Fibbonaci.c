@@ -1,4 +1,9 @@
-//
+//                                                   Question 34 : Print Fibonacci
+
+// Create a function 
+// Input n 
+// n will be the number of steps for fibonacci 
+
 
 
 
@@ -17,7 +22,7 @@ void fibo (int n){
     int fibo1 = 0;
     int fibo2 = 1;
     printf("%d, ", fibo1);
-    for(int i = 0; i <= n; i++){
+    for(int i = 2; i <= n; i++){
         printf("%d, ", fibo2);
         int temp = fibo1 + fibo2;
         fibo1 = fibo2;
