@@ -229,7 +229,7 @@
 // i++ is for use, then increase (pre-increment)
 // ++i is for increase, then use (post-increment)
 
-//DECREMENT OPEARTORS :
+//DECREMENT OPERATORS :
 // i-- is for use, then increase (pre-decrement)
 // --i is for increase, then use (post-decrement)
 
@@ -238,9 +238,108 @@
 // do{
 //    work;
 // } while(condition);
+// preferred loop for when you need to put condition on user input 
 
 // you can use multiple iterations in one for loop
-// 
+// example :
+// calculating sum to number x and reverse print from x to 0 : 
+//   int x = 3, sum = 0;
+//       for(int i = 1, j = x; i <= x && j >= 0; i++, j--){
+//           sum += i;
+//           printf("%d\n", j);
+//       }
+//       printf("%d", sum);
+// here, both loops work simultaneously in one single one instead of needing two sepearte loops 
+
+//BREAK STATEMENT : 
+// to exit a loop or a block of code
+
+//CONTINUE :
+// stop only this iteration, and continue for all the others
+// to skip only a small part
+
+//FUNCTIONS :
+// Block of code that performs a particular task
+// will only do one work or else it will become complex
+// Take argument -> Do work -> Return Result
+// Properties : 
+//   can be used multiple of times
+//   increases code reusability
+// if you have to do a task 3 or more than 3 times, make it a function 
+
+//FUNCTION SYNTAX :
+// 1.Function Prototype / Declaration :
+//    void printHello();
+//    void will print but not return 
+// 2.Function Definition :
+//    code inside curly braces
+// 3.Function Call : 
+//    printHello();
+
+//       void printHello();            // declaration/prototype
+//       int main(){
+//           printHello();             // function call
+//           return 0;
+//       }
+//       void printHello(){            // function declaration
+//           printf("Hello!") 
+//       }
+
+//FUNCTION PROPERTIES :
+// Execution always starts from main
+// A function gets called directly or indirectly from the main function
+// Can be multiple functions in the program
+// TYPES OF FUNCTION :
+//    1. Library Function
+//          -> Special Functions inbuilt in C
+//          -> scanf(), printf() 
+//    2. User-defined 
+//          -> declared and defined by programmer 
+// PASSING ARGUMENTS :
+//    1. Takes Parameter 
+//          -> Variable inside the Calling statement
+//    2. Returns Value 
+//          -> The variable inside the function's ()
+// A variable defined in a function, doesnt exist outside of the curly braces 
+// Function can only return one value
+// Changes in parameters in function dont change the values in the calling function (becuase copy of argument is passed in function )
+
+//ARGUMENT VS PARAMETER 
+//                           ARGUMENT                                         PARAMETER
+//                        1. Values passed in function call                1. Vales in funcction declaration and definition
+//                        2. Used to send Values                           2. used to recieve values
+//                        3. Actual Parameter                              3. Formal Parameters
+
+//RECURSION :
+// When a function calls itself, its called Recursion
+// Loops and Recursion can be used interchangibily
+// It has a Base Case which is the first place from where it begins ie the last function that will be called from where the calculation starts
+// It is called a recursion Tree
+// PROPERTIES :
+//   -> Recursion can sometimes give the most simple solution
+//   -> Base Case is the condition that stops the recursion
+//   -> Iteration has infinite loop and Recursion has stack overflow
+
+//POINTERS :
+// A variable that stores the memory address of another variable
+//         int age = 22;              value at address
+//         int *ptr = &age;           value at address storing address of the variable
+//         int age2 = *ptr;           this will use the address of the pointer to go to that address and assign the original variable's value to the new on
+// Declaring Pointers :
+//   -> char *ptr
+//   -> float *ptr
+//   -> int *ptr 
+//   This depends on what is being stored at the address it is pointing to
+// Format Specifier :
+//   %p is used to print hexadecimal value of address of pointer
+//   %u can be used as a type cast to convert it to unsigned int form
+//       printf("%p", &age);          will print address of age
+//       printf("%p", ptr);           will print address of the variable stored in the pointer variable
+//       printf("%p", &ptr);          will print the address of pointer variable
+
+//POINTER TO POINTER :
+// A variable that stores the memory address of another pointer 
+//       int **pptr
 
 
 
@@ -249,19 +348,14 @@
 
 
 
-// int x, i;
-    // printf("Random code so that the comments are visible");
+
 
 
 
 #include <stdio.h>
 int main(){
-    int x = 3, sum = 0;
-    for(int i = 1, j = x; i <= x && j >= 0; i++, j--){
-        sum += i;
-        printf("%d\n", j);
-    }
-    printf("%d", sum);
+    int n; 
+
 }
 
 

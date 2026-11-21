@@ -124,14 +124,18 @@
 #include <stdio.h>
 
 int main(){
-    int a;
-    printf("Enter a number : ");
-    scanf("%d", &a);
-    if(a >= 1){
-        printf("Its a natural number");
-    } else {
-        printf("Not a natural number");
-    };
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++){
+        for (int j = 2; j <= i; j++){
+            if (i % j == 0){
+                 break;
+            }
+            if (j == i){
+                printf("%d", i);
+            }
+        }
+    }
 }
 
 
