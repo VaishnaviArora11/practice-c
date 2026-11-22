@@ -13,7 +13,7 @@ int main(){
         scanf("%d", (ptr + i));
     }
     for (int i = 0; i < 10; i++){
-        printf("%d\n", aadhar[i]);
+        printf("%d\n", aadhar[i]);        //can also use: printf("%d\n", *(ptr + i));
     }
 }
 
