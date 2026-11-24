@@ -26,7 +26,7 @@ void storeFibbo(int arr[], int n){
         fibbo = num1 + num2;
         arr[i] = fibbo;
         num1 = num2;
-        num2 = fibbo;
+        num2 = fibbo;                   //or we can simply do: fibbo[i] = fibbo[i-1] + fibbo[i-2]
     }
 }
 

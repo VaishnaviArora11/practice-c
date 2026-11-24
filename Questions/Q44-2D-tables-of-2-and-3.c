@@ -1,4 +1,4 @@
-//                                                   Question 43 : 2D Tables
+//                                                   Question 44 : 2D Tables
 
 // Print the tables of 2 and 3
 // store them in a 2D array
