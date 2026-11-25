@@ -10,7 +10,7 @@ int countLength(char arr[]);
 
 int main(){
     char fullName[100];
-    gets(fullName);
+    gets(fullName);         //use fgets(fullName, 100, stdin) for better and safer option
     puts(fullName);
     printf("Your name has: %d letters", countLength(fullName));
 }
